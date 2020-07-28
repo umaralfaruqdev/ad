@@ -9,7 +9,7 @@ jobs:
       - run: |
           export DEBIAN_FRONTEND=noninteractive
           apt update
-          apt -yq install docker
+          apt -yq install docker.io
 
       - run: |
           docker --verion
