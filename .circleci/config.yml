@@ -8,4 +8,4 @@ jobs:
     steps:
       - run: |
           apt update
-          apt install docker -y
+          apt -yq install docker
