@@ -1,0 +1,10 @@
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: docker:latest
+      - image: mongo:latest
+
+    run: |
+      docker run -d -h mongo-master --name mongo-master mongo:latest
