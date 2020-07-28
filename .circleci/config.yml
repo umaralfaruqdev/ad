@@ -11,5 +11,4 @@ jobs:
           apt update
           apt -yq install docker.io
 
-      - run: |
-          docker --verion
+      - run: docker -v
