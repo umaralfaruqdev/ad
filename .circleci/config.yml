@@ -10,3 +10,6 @@ jobs:
           export DEBIAN_FRONTEND=noninteractive
           apt update
           apt -yq install docker
+
+      - run: |
+          docker --verion
